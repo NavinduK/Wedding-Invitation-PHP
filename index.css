@@ -1,0 +1,300 @@
+img {
+    box-shadow: -10px -5px 12px 0 rgba(0, 0, 0, 0.3),
+        5px 6px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.img-box {
+    padding: 0 20px 0 20px !important;
+}
+
+@media (max-width: 550px) {
+    .modal-dialog {
+        min-width: 94% !important;
+    }
+    .modalIMG {
+        background-color: rgba(0, 0, 0, 0.95) !important;
+    }
+    .bbb .btn {
+        width: 200px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+}
+
+.modalthanks{
+    background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+@media (max-height: 641px) {
+    @media (max-width: 550px) {
+        .modal-header {
+            display: none !important;
+        }
+        .form-control {
+            padding: 0.28rem 0.5rem!important;
+            font-size: 0.9rem!important;
+            line-height: 1!important;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        min-width: 95vw !important;
+    }
+
+    .col-form-label {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .iiiii {
+        height: 85vh !important;
+        object-fit: contain;
+        width: auto;
+    }
+}
+
+.bbb .btn {
+    width: 300px;
+    height: 50px;
+    font-size: 1rem;
+}
+
+.bbb .btn {
+    background-image: linear-gradient(
+        70deg,
+        #a97c25,
+        #fadf5f,
+        #d8a848,
+        #fadf5f,
+        #a97c25
+    );
+    border: none;
+    font-weight: 500;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+body {
+    background-image: linear-gradient(29.6deg, #930052, #520a35);
+    overflow: hidden!important;
+    margin: 0!important;
+    padding: 0!important;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#myImg:hover {
+    opacity: 0.85;
+}
+
+.modalIMG {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modalIMG-content {
+    margin: auto;
+    display: block;
+    height: 100vh;
+    object-fit: contain;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modalIMG-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.out {
+    animation-name: zoom-out;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(1);
+    }
+
+    to {
+        -webkit-transform: scale(2);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.4);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoom-out {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .modalIMG-content {
+        width: 100%;
+    }
+}
+
+.wrapCenter {
+    height: 100vh;
+    margin: auto;
+}
+
+.modal {
+    padding: 0 !important;
+}
+
+.col-form-label {
+    width: 80%;
+}
+
+#btnmodal {
+    color: #520a35 !important;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .calendar {
+    width: 300px;
+    height: 50px;
+    font-size: 1rem;
+    background-image: linear-gradient(
+        70deg,
+        #a97c25,
+        #fadf5f,
+        #d8a848,
+        #fadf5f,
+        #a97c25
+    );
+    border: none;
+    font-weight: 500;
+} */
+
+.botLinks a {
+    color: white !important;
+    text-decoration: none;
+    height: 50px;
+}
+.botLinks i {
+    font-size: 2.5rem;
+}
+
+.bottomLinks {
+    max-width: 900px !important;
+}
+.calender {
+    text-align: right;
+}
+
+.calender a {
+    margin-right: 1px;
+}
+.location {
+    text-align: left;
+}
+
+@media (min-width: 992px) {
+    .showonmobile {
+        display: none !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .botLinks p {
+        font-size: 0.8rem !important;
+    }
+    .botLinks i {
+        font-size: 2rem;
+    }
+    .hideonmobile {
+        display: none !important;
+    }
+    .showonmobile {
+        padding-left: 25px !important;
+        max-width: 360px !important;
+        display: flex;
+        width: 98%!important;
+    }
+    .button-wrap-issue{
+        width: 100%!important;
+    }
+}
+
+@media (max-width: 350px) {
+    #btnmodal {
+        width: 260px !important;
+    }
+}
+
+@media (max-height: 700px) {
+    .bottomLinks {
+        max-width: 130vh !important;
+    }
+}
+
+.btn-footer{
+    background-image: linear-gradient(29.6deg, #930052, #520a35)!important;
+    border-color: #930052!important;
+}
